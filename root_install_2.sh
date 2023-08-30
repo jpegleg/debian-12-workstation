@@ -7,4 +7,4 @@ wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists
 aptitude update
 aptitude install --install-recommends winehq-staging -y
 
-aptitude install cabextract libnotify-bin -y
+aptitude install cabextract libnotify-bin tmux htop -y
