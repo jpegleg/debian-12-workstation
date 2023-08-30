@@ -24,3 +24,5 @@ Configure Wine and Yabridge for user:
 ```
 bash user_install_2.sh
 ```
+
+The build is tested for Debian 12 using XFCE desktop, but it may work fine for other debian-based setups.
