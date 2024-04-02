@@ -7,7 +7,7 @@ aptitude update && aptitude upgrade -y
 aptitude install curl git vim -y
 curl 'https://liquorix.net/add-liquorix-repo.sh' | bash
 aptitude install linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -y
-aptitude install pipewire pipewire-alsa pipewire-audio pipewire-audio-client-libraries pipewire-jac pipewire-pulse libspa-0.2-jack wireplumber -y
+aptitude install pipewire pipewire-alsa pipewire-audio pipewire-audio-client-libraries pipewire-jack pipewire-pulse libspa-0.2-jack wireplumber -y
 cp /usr/share/doc/pipewire/examples/ld.so.conf.d/pipewire-jack-*.conf /etc/ld.so.conf.d/
 ldconfig
 sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet threadirqs cpufreq.default_governor=performance"/g' /etc/default/grub
