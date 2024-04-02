@@ -21,7 +21,7 @@ mkdir -pm755 /etc/apt/keyrings
 wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
 aptitude update
-aptitude install winehq-staging -y
+aptitude install -r winehq-staging -y
 aptitude install cabextract -y
 aptitude install libnotify-bin -y
 aptitude install inkscape gimp gcc clang ufw python3-venv -y
